@@ -1,0 +1,142 @@
+/* styles.css */
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    z-index: 1000;
+}
+
+.parallax {
+    position: relative;
+    background-image: url('front.png'); /* Replace with your image path */
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.larger-img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Adjust as needed */
+}
+
+.custom-heading {
+    margin-top: 40px !important; /* Ensure the margin-top is applied */
+}
+
+.custom-paragraph {
+    margin-top: 20px !important; /* Ensure the margin-top is applied */
+}
+
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 2em;
+    }
+}
+
+
+/* navbar parallax */
+.img-fluid  {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Adjust as needed */
+}
+
+
+p {
+    margin-top: 10px; /* Adjust as needed to move the paragraph down */
+}
+.custom-heading {
+    margin-top: 60px !important;
+}
+
+.container{
+    padding-top: 0%;
+}
+.btn-secondary{
+    background-color: #006ff0;
+}
+
+
+/*cursel size*/
+.carousel-item img {
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 100px;
+  }
+  /*cursel size*/
+
+ /*footer*/
+ .footer {
+    background-color: #f6f7f9; /* Light gray background */
+    color: #343a40; /* Dark gray text color */
+  }
+  .footer a {
+    color: #343a40; /* Dark gray link color */
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: #000; /* Black color on hover */
+    text-decoration: underline;
+  }
+  .footer .bi {
+    fill: #343a40; /* Dark gray SVG icon color */
+  }
+
+ /*footer*/
+ 
+  .circle-img{
+    height: 25vh;
+    width: 35vh;
+    border-radius: 20px;
+  }
+   /*footer*/
+
+  .btn-link {
+    display: inline-block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #28a745;
+    background-color: transparent;
+    border: 1px solid #28a745;
+    border-radius: .25rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    text-decoration: none; 
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-link:hover {
+    color: #fff;
+    background-color: #28a745;
+    text-decoration: none;
+}
